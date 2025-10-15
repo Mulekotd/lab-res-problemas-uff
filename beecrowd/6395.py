@@ -1,7 +1,7 @@
-num = int(input())
+n = int(input())
 intersections = set(map(int, input().split()))
 
-for _ in range(num - 1):
+for _ in range(n - 1):
     elements = set(map(int, input().split()))
     intersections &= elements
 

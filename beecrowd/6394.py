@@ -1,34 +1,36 @@
-def vencedor(j1, j2):
-    if j1 == j2:
+def winner(p1, p2):
+    if p1 == p2:
         return "empate"
-    elif (j1 == "tesoura" and j2 == "papel") or \
-         (j1 == "papel" and j2 == "pedra") or \
-         (j1 == "pedra" and j2 == "tesoura"):
+    elif (p1 == "tesoura" and p2 == "papel") or \
+         (p1 == "papel" and p2 == "pedra") or \
+         (p1 == "pedra" and p2 == "tesoura"):
         return "jogador 1"
     else:
         return "jogador 2"
 
 
-teste = 1
+test = 1
+
 while True:
     n = int(input())
     
     if n == 0:
         break
 
-    jogadas_p1 = []
-    while len(jogadas_p1) < n:
-        jogadas_p1 += input().split()
+    p1_plays = []
+    while len(p1_plays) < n:
+        p1_plays += input().split()
 
-    jogadas_p2 = []
-    while len(jogadas_p2) < n:
-        jogadas_p2 += input().split()
+    p2_plays = []
+    while len(p2_plays) < n:
+        p2_plays += input().split()
 
-    if teste > 1:
+    if test > 1:
         print()
 
-    print(f"Teste {teste}")
-    for i in range(n):
-        print(vencedor(jogadas_p1[i], jogadas_p2[i]))
+    print(f"test {test}")
 
-    teste += 1
+    for i in range(n):
+        print(winner(p1_plays[i], p2_plays[i]))
+
+    test += 1
