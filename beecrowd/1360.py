@@ -1,8 +1,6 @@
 values = ['1','2','3','4','5','6','7','8','9','T','J','Q','K']
-suits  = {'H':0, 'C':1, 'D':2, 'S':3}
-
-# Mapa de permutações
-perm_to_num = {(0,1,2): 1, (0,2,1): 2, (1,0,2): 3, (1,2,0): 4, (2,0,1): 5, (2,1,0): 6}
+suits  = {'H': 0, 'C': 1, 'D': 2, 'S': 3}
+perm_to_num = {(0,1,2): 1, (0,2,1): 2, (1,0,2): 3, (1,2,0): 4, (2,0,1): 5, (2,1,0): 6} # Mapa de permutações
 
 def card_key(card):
     return (suits[card[1]], values.index(card[0]))
