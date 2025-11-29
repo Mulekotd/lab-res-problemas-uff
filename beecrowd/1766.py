@@ -26,6 +26,7 @@ for i in range(T):
         reindeers.append(tuple(R))
     
     reindeers.sort(key=cmp_to_key(cmp_reindeers))
+    # reindeers.sort(key=lambda x: (-x[1], x[2], x[3], x[0])) <- Sem o uso de cmp_to_key
 
     print(f"CENARIO {{{i+1}}}")
     for index, reindeer in enumerate(reindeers[:M], 1):
