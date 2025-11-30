@@ -14,12 +14,7 @@ for line in range(1, L + 1):
 max_daisy = 0
 for i in range(M, L + 1, M):
     for j in range(N, C + 1, N):
-        curr     = matrix[i][j]
-        diagonal = matrix[i-M][j-N]
-        line     = matrix[i-M][j]
-        colune   = matrix[i][j-N]
-        
-        partial = curr + diagonal - line - colune
+        partial = matrix[i][j] + matrix[i-M][j-N] - matrix[i-M][j] - matrix[i][j-N]
         
         if partial > max_daisy:
             max_daisy = partial

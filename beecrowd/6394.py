@@ -12,17 +12,17 @@ def winner(p1, p2):
 test = 1
 
 while True:
-    n = int(input())
+    N = int(input())
     
-    if n == 0:
+    if N == 0:
         break
 
     p1_plays = []
-    while len(p1_plays) < n:
+    while len(p1_plays) < N:
         p1_plays += input().split()
 
     p2_plays = []
-    while len(p2_plays) < n:
+    while len(p2_plays) < N:
         p2_plays += input().split()
 
     if test > 1:
@@ -30,7 +30,7 @@ while True:
 
     print(f"test {test}")
 
-    for i in range(n):
+    for i in range(N):
         print(winner(p1_plays[i], p2_plays[i]))
 
     test += 1

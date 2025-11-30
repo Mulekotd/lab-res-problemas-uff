@@ -1,7 +1,7 @@
-n = int(input())
-pascals_triangle = []
+N = int(input())
 
-for i in range(n):
+pascals_triangle = []
+for i in range(N):
     if i == 0:
         pascals_triangle.append([1])
     else:

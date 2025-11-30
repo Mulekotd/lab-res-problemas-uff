@@ -21,7 +21,7 @@ def decode_hidden(cards):
 
     return values[hidden_val_idx] + base[1]
 
-n = int(input())
+N = int(input())
 
-for _ in range(n):
+for _ in range(N):
     print(decode_hidden(input().split()))

@@ -1,7 +1,7 @@
 while True:
-    n = int(input())
+    N = int(input())
 
-    if n == 0:
+    if N == 0:
         break
 
     results = map(int, input().split())

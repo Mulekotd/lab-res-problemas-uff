@@ -20,5 +20,6 @@ def move_zeros(v):
 
     return v
 
-print(move_zeros([0, 1, 3, 0, 12, 0, 2]))
-print(move_zeros([0, 0, 0, 0, 1]))
+
+print(move_zeros([0, 1, 3, 0, 12, 0, 2])) # Output: [1, 3, 12, 2, 0, 0, 0]
+print(move_zeros([0, 0, 0, 0, 1])) # Output: [1, 0, 0, 0, 0]

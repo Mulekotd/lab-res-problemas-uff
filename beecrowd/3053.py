@@ -1,7 +1,7 @@
-n = int(input().strip())
+N = int(input().strip())
 coin = input().strip()
 
-for _ in range(n):
+for _ in range(N):
     op = int(input().strip())
 
     if op == 1:

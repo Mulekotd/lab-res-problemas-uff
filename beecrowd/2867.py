@@ -1,9 +1,9 @@
 import math
 
-N = int(input())
+T = int(input())
 
-for _ in range(N):
-    n, m = map(int, input().split())
-    digits = int(math.floor(m * math.log10(n))) + 1
+for _ in range(T):
+    N, M = map(int, input().split())
+    digits = int(math.floor(M * math.log10(N))) + 1
 
     print(digits)

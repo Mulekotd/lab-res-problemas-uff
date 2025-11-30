@@ -1,7 +1,7 @@
 N = int(input())
 
 
-def sort(v: list[int]):
+def reversed_sort(v: list[int]):
     n = len(v)
     aux = v.copy()
 
@@ -16,7 +16,7 @@ def sort(v: list[int]):
 for _ in range(N):
     M = int(input())
     queue = list(map(int, input().split()))
-    displacements = sort(queue)
+    displacements = reversed_sort(queue)
 
     counter = 0
     for i in range(M):

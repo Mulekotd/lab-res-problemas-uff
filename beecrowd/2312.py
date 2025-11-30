@@ -15,6 +15,7 @@ def cmp_medals(q1, q2):
 
 
 N = int(input())
+
 countries = []
 for _ in range(N):
     C = input().split()

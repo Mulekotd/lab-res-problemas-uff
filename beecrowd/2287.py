@@ -1,15 +1,16 @@
 test = 1
 
 while True:
-    n = int(input())
+    N = int(input())
 
-    if n == 0:
+    if N == 0:
         break
 
     possible = [set(range(10)) for _ in range(6)]
 
-    for _ in range(n):
+    for _ in range(N):
         data = input().split()
+        
         nums = [int(x) for x in data[:10]]
         password = data[10:]
 
