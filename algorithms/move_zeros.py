@@ -1,4 +1,4 @@
-def move_zeros(v):
+def move_zeros(v: list[int]) -> list[int]:
     n = len(v)
 
     non_zero = []
