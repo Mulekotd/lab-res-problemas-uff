@@ -1,6 +1,21 @@
 v = [10, 5, 3, 7, 0, -5, -3, -7, -10]
 
 
+def selection_sort(v: list[int]) -> None:
+    n = len(v)
+
+    for i in range(n):
+        min_index = i
+
+        j = i + 1
+        while j < n:
+            if v[j] < v[min_index]:
+                min_index = j
+            j += 1
+        
+        v[i], v[min_index] = v[min_index], v[i]
+
+
 def insertion_sort(v: list[int]) -> None:
     n = len(v)
 
@@ -23,8 +38,8 @@ def bubble_sort(v: list[int]) -> None:
 
 
 # insertion_sort(v)
-# TODO: selection_sort(v)
-bubble_sort(v)
+selection_sort(v)
+# bubble_sort(v)
 # TODO: merge_sort(v)
 # TODO: quick_sort(v)
 # TODO: counting_sort(v)
